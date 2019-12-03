@@ -78,13 +78,8 @@ span {
     display: none;
 }
 
-#sidebar.active .sidebar-header h3,
-#sidebar.active .CTAs {
+#sidebar.active .sidebar-header span {
     display: none;
-}
-
-#sidebar.active .sidebar-header strong {
-    display: block;
 }
 
 #sidebar ul li a {
@@ -120,11 +115,13 @@ span {
 #sidebar .sidebar-header {
     padding: 5px;
     background: #0FA5F1;
+    max-height: 90px;
+    font-size: 40px;
 }
 
-#sidebar .sidebar-header strong {
-    display: none;
-    font-size: 1.8em;
+#sidebar img{
+    max-height:inherit; 
+    max-width: inherit;
 }
 
 #sidebar ul.components {
@@ -227,11 +224,7 @@ a.article:hover {
     #sidebar.active {
         margin-left: 0 !important;
     }
-    #sidebar .sidebar-header h3,
-    #sidebar .CTAs {
-        display: none;
-    }
-    #sidebar .sidebar-header strong {
+    #sidebar .sidebar-header span {
         display: block;
     }
     #sidebar ul li a {
@@ -257,16 +250,20 @@ a.article:hover {
         display: none;
     }
 }
-.question{
-  background-color : #31B0D5;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
-  border-color: #46b8da;
-}
 
-#question{
-  position: fixed;
-  bottom: -4px;
-  right: 10px;
-}
+/*
+    Help Button
+*/
+.question{
+    background-color : #31B0D5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #46b8da;
+  }
+  
+  #question{
+    position: fixed;
+    bottom: -4px;
+    right: 10px;
+  }

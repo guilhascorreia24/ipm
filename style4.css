@@ -61,7 +61,7 @@ span {
 }
 
 #sidebar {
-    min-width: 250px;
+    min-width: 300px;
     max-width: 250px;
     background: #0FA5F1;
     color: #fff;
@@ -135,7 +135,7 @@ span {
 }
 
 #sidebar ul.components {
-    padding: 0px 0px;
+    padding: 20% 4%;
     border-bottom: 1px solid #0FA5F1;
 }
 
@@ -218,10 +218,10 @@ a.article:hover {
 
 @media (max-width: 768px) {
     #sidebar {
-        min-width: 100px;
+        min-width: 300px;
         max-width: 80px;
         text-align: center;
-        margin-left: -80px !important;
+        margin-left: 0px !important;
     }
     .dropdown-toggle::after {
         top: auto;

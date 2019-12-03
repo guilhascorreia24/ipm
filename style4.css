@@ -267,13 +267,13 @@ a.article:hover {
 .question{
     background-color : #31B0D5;
     color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
+    padding: 100% 500%;
+    border-radius: 6px;
     border-color: #46b8da;
   }
   
   #question{
     position: fixed;
-    bottom: -4px;
-    right: 10px;
+    bottom: 5%;
+    right: 1%;
   }

@@ -78,6 +78,10 @@ span {
     display: none;
 }
 
+#sidebar .sidebar-header-text{
+    width: inherit;
+}
+
 #sidebar.active .sidebar-header span {
     display: none;
 }
@@ -87,7 +91,7 @@ span {
 }
 
 #sidebar.active ul li a {
-    padding: 20px 10px;
+    padding: 10px 35px;
     text-align: center;
     font-size: 0.85em;
 }
@@ -114,9 +118,15 @@ span {
 
 #sidebar .sidebar-header {
     padding: 5px;
+    margin-bottom: 30px;
     background: #0FA5F1;
     max-height: 90px;
     font-size: 40px;
+}
+
+#sidebar.active .sidebar-img{
+    height:inherit; 
+    width: inherit;
 }
 
 #sidebar img{
@@ -125,7 +135,7 @@ span {
 }
 
 #sidebar ul.components {
-    padding: 20px 10px;
+    padding: 0px 0px;
     border-bottom: 1px solid #0FA5F1;
 }
 

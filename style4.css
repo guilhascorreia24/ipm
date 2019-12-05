@@ -74,7 +74,7 @@ span {
     max-width: 250px;
     background: #0FA5F1;
     color: #fff;
-    transition: all 0.3s;
+    transition: all .3s;
 }
 
 #sidebar.active {
@@ -88,10 +88,12 @@ span {
 }
 
 #sidebar .sidebar-header-text{
+    padding-left: 10%;
     width: inherit;
 }
 
 #sidebar.active .sidebar-header span {
+    padding-bottom: 20%;
     display: none;
 }
 
@@ -126,11 +128,14 @@ span {
 }
 
 #sidebar .sidebar-header {
-    padding: 5px;
-    margin-bottom: 30px;
+    padding: 27px;
     background: #0FA5F1;
     max-height: 90px;
     font-size: 40px;
+}
+
+#sidebar.active .sidebar-header {
+    padding: 5px;
 }
 
 #sidebar.active .sidebar-img{
@@ -218,7 +223,7 @@ a.article:hover {
     width: 100%;
     padding: 20px;
     min-height: 100vh;
-    transition: all 0.3s;
+    transition: all .3s;
 }
 
 /* ---------------------------------------------------
@@ -274,11 +279,10 @@ a.article:hover {
     Help Button
 */
 .question{
-    background-color : #31B0D5;
+    background-color : #0FA5F1;
     color: white;
-    padding: 100% 500%;
     border-radius: 6px;
-    border-color: #46b8da;
+    border-color: #0FA5F1;
   }
   
   #question{

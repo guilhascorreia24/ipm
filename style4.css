@@ -51,6 +51,11 @@ span {
     display: inline-block;
 }
 
+
+/*HEADER*/
+.headerTitle{
+    font-size: 30px;
+}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -58,6 +63,10 @@ span {
 .wrapper {
     display: flex;
     align-items: stretch;
+}
+
+.labelForm{
+    width:25%;
 }
 
 #sidebar {

@@ -69,17 +69,37 @@ span {
     width:25%;
 }
 
+#left-column{
+    padding-right:300px;
+    transition:all 0.3s;
+}
+
+#left-column.active{
+    padding-right:100px;
+    transition:all 0.3s;
+}
+
 #sidebar {
     min-width: 300px;
-    max-width: 250px;
+    max-width: 300px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    z-index: 9;
     background: #0FA5F1;
     color: #fff;
     transition: all .3s;
 }
 
+.sidebar-current-position{
+    color:  #0FA5F1; 
+    background: #fafafa;
+} 
+
 #sidebar.active {
     min-width: 100px;
     max-width: 100px;
+
     text-align: center;
 }
 
@@ -149,7 +169,7 @@ span {
 }
 
 #sidebar ul.components {
-    padding: 20% 4%;
+    padding: 20% 0%;
     border-bottom: 1px solid #0FA5F1;
 }
 
@@ -161,7 +181,7 @@ span {
 
 #sidebar ul li a:hover {
     color:  #0FA5F1;
-    background: #fff;
+    background: #fafafa;
 }
 
 #sidebar ul li a i {
@@ -170,7 +190,7 @@ span {
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff;
+    color: #fafafa;
     background: #0FA5F1;
 }
 
@@ -205,7 +225,7 @@ ul.CTAs a {
 }
 
 a.download {
-    background: #fff;
+    background: #fafafa;
     color: #0FA5F1;
 }
 
@@ -229,6 +249,7 @@ a.article:hover {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+
 
 @media (max-width: 768px) {
     #sidebar {

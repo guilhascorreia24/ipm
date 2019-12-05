@@ -43,6 +43,7 @@
 
     <div class="wrapper">
         <!-- Sidebar  -->
+        <div id="left-column">
         <nav id="sidebar">
             <div class="sidebar-header">
                 <img src="logo_ualg_white.png" height="inherit" width="inherit">
@@ -50,7 +51,7 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li style="    color:  #0FA5F1; background: #fff;">
+                <li class= "sidebar-current-position">
                     <a href="#">
                         <i class="fas fa-home sidebar-img"></i>
                         <span class="sidebar-text">Perfil</span>
@@ -116,6 +117,7 @@
 
             </ul>
         </nav>
+    </div>
 
         <div id="content">
             <!-- Page Header  -->
@@ -292,6 +294,7 @@
                 $(document).ready(function () {
                     $('#sidebarCollapse').on('click', function () {
                         $('#sidebar').toggleClass('active');
+                        $('#left-column').toggleClass('active');
                     });
                 });
             </script>

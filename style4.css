@@ -300,21 +300,14 @@ a.article:hover {
     Help Button
 */
 .question{
-    position: fixed;
     background-color : #0FA5F1;
-    color: black;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    bottom: 2%;
-    right: 2%;
-    z-index: 10;
-    font-size: 35px;
-    text-align: center;
-    vertical-align: bottom;
-}
-
-.question:hover{
     color: white;
-    transition: all 0.3s;
-}  
+    border-radius: 6px;
+    border-color: #0FA5F1;
+  }
+  
+  #question{
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+  }

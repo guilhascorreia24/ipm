@@ -61,21 +61,22 @@
             <nav id="sidebar">
                 <div class="sidebar-header" style="padding:8%">
                     <img src="logo_ualg_white.png" style="vertical-align:inherit;">
-                    <span class="sidebar-text sidebar-header-text" style="padding: 0%;width:60%">UAlg<h6>Universidade do Algarve</h6></span>
+                    <span class="sidebar-text sidebar-header-text" style="padding: 0%;width:60%">UAlg<h6>Universidade do
+                            Algarve</h6></span>
                 </div>
 
                 <ul class="list-unstyled components">
-                    <li class="sidebar-current-position">
+                    <li>
                         <a href="#">
                             <i class="fas fa-home sidebar-img"></i>
                             <span class="sidebar-text">Perfil</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#Tarefas">
-                            <i class="fas fa-tasks sidebar-img"></i>
-                            <span class="sidebar-text">Tarefas</span>
-                        </a>
+                    <li class="sidebar-current-position">
+                            <a href="#Transportes">
+                                <i class="fas fa-tasks sidebar-img"></i>
+                                <span class="sidebar-text">Tarefas</span>
+                            </a>
                     </li>
                     <li>
                         <a href="#Transportes">
@@ -147,38 +148,29 @@
                 </div>
             </nav>
             <!-- End Page Header  -->
-
-            <div>
-                <form class="well form-horizontal ">
-                    <div class="input-group col-sm-8">
-                        <div class="input-group-prepend labelForm">
-                            <span class="input-group-text w-100" id="">Nome</span>
-                        </div>
-                        <input type="text" value="name" class="form-control">
-                    </div>
-                    <br>
-                    <div class="input-group col-sm-8">
-                        <div class="input-group-prepend labelForm">
-                            <span class="input-group-text w-100" id="">Função</span>
-                        </div>
-                        <input type="text" value = "school_name" class="form-control">
-                    </div>
-                    <br>
-                    <div class="input-group col-sm-8">
-                        <div class="input-group-prepend labelForm">
-                            <span class="input-group-text w-100" id="">Email</span>
-                        </div>
-                        <input type="email" value = "mail" class="form-control col-sm-8">
-                    </div>
-                    <br>
-                    <div class="input-group col-sm-8">
-                        <div class="input-group-prepend labelForm">
-                            <span class="input-group-text w-100" id="">Nº Telemóvel</span>
-                        </div>
-                        <input type="text" value= "phone_number"class="form-control col-sm-3">
-                    </div>
-                        <!-- Button -->
-                                        </form>
+            <div class="panel-body">
+                <table class="table table-striped table-bordered table-list" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th><em></em></th>
+                            <th>Nº</th>
+                            <th>Nome</th>
+                            <th>Escola</th>
+                            <th>Ano Escolar</th>
+                            <th>Nº de Alunos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align= "center"><a class="btn btn-success"><em class="fas fa-eye"></em></a></td>
+                            <td >2734</td>
+                            <td>NoName</td>
+                            <td>Esola de Alverca</td>
+                            <td>12</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         </div>

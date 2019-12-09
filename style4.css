@@ -70,18 +70,18 @@ span {
 }
 
 #left-column{
-    padding-right:300px;
+    padding-right:316px;
     transition:all 0.3s;
 }
 
 #left-column.active{
-    padding-right:100px;
+    padding-right:119px;
     transition:all 0.3s;
 }
 
 #sidebar {
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 316px;
+    max-width: 316px;
     position: fixed;
     bottom: 0;
     top: 0;
@@ -89,6 +89,7 @@ span {
     background: #0FA5F1;
     color: #fff;
     transition:all 0.05s;
+    overflow-y:scroll;
 }
 
 .sidebar-current-position{
@@ -97,10 +98,10 @@ span {
 } 
 
 #sidebar.active {
-    min-width: 100px;
-    max-width: 120px;
+    min-width: 119px;
+    max-width: 119px;
+    overflow-y:scroll;
     text-align: center;
-    overflow-y: auto;
 }
 
 #sidebar.active .sidebar-text{
@@ -241,10 +242,9 @@ a.article:hover {
 
 #content {
     width: 100%;
-    padding: 20px;
+    padding: 1%;
     min-height: 100vh;
     transition: all .3s;
-    padding-left: 2%;
 }
 
 /* ---------------------------------------------------
@@ -254,7 +254,7 @@ a.article:hover {
 
 @media (max-width: 768px) {
     #sidebar {
-        min-width: 300px;
+        min-width: 316px;
         max-width: 80px;
         text-align: center;
         margin-left: 0px !important;

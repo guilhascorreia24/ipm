@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Dia Aberto 2020</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style4.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+    <!-- Stepper CSS -->
+    <link href="css/addons-pro/steppers.css" rel="stylesheet">
+    <!-- Stepper CSS - minified-->
+    <link href="css/addons-pro/steppers.min.css" rel="stylesheet">
+
+    <!-- Stepper JavaScript -->
+    <script type="text/javascript" src="js/addons-pro/stepper.js"></script>
+    <!-- Stepper JavaScript - minified -->
+    <script type="text/javascript" src="js/addons-pro/stepper.min.js"></script>
+
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+    <!------ Include the above in your HEAD tag ---------->
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet'
+        type='text/css'>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <div id="left-column">
+            <nav id="sidebar">
+                <div class="sidebar-header" style="padding:8%">
+                    <img src="logo_ualg_white.png" style="vertical-align:inherit;">
+                    <span class="sidebar-text sidebar-header-text" style="padding: 0%;width:60%">UAlg<h6>universidade do
+                            algarve</h6></span>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home sidebar-img"></i>
+                            <span class="sidebar-text">Perfil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#atividade" data-toggle="collapse" aria-expanded=none
+                            class="dropdown-toggle sidebar-current-position">
+                            <i class="fas fa-copy sidebar-img"></i>
+                            <span class="sidebar-text">Atividades</span>
+                        </a>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="sidebar-current-position">Criar Atividade</a>
+                            </li>
+                            <li>
+                                <a href="#">Consultar Atividade</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#Transportes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-car sidebar-img"></i>
+                            <span class="sidebar-text">Transportes</span>
+                        </a>
+                        <ul class="collapse list-unstyled" id="Transportes">
+                            <li>
+                                <a href="#">Criar Transporte</a>
+                            </li>
+                            <li>
+                                <a href="#">Consultar Transporte</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-utensils sidebar-img"></i>
+                            <span class="sidebar-text">Refeições</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-calendar sidebar-img"></i>
+                            <span class="sidebar-text">Horario</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas  fa-check sidebar-img"></i>
+                            <span class="sidebar-text">Check-In</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog sidebar-img"></i>
+                            <span class="sidebar-text">Definições</span>
+                        </a>
+                    </li>
+                    <li class="bg-danger   ">
+                        <a href="
+                    #"><i class="fas fa-times sidebar-img"></i>
+                            Sair</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <!--End sidebar-->
+        <!--Help Button-->
+        <div id="slidebar">
+            <ul class="list-unstyled components">
+                <li id="question">
+                    <a href="#" class="question btn-circle btn-info" data-toogle="collapse" aria-expanded="false"
+                        style="width: 50%;height:50%;padding: 9px 15px; border-radius:50%; font-size:24px;line-height:1.33"><i
+                            class="fas fa-question"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!--End Help Button-->
+        <div id="content">
+            <!-- Page Header  -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid text-center">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary btn-lg">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <div class="nav navbar-nav text-center">
+                        <label class="headerTitle"> DIA ABERTO</label>
+                    </div>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="nav-item active">
+                            <button type="button" class="btn btn-primary btn-lg"><i class="fas fa-bell"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Page Header  -->
+
+            <!--Write Code-->
+            <div class="col-sm-12">
+                <form class="well form-horizontal">
+                    <h5 class="input-group col-sm-8">Campus:</h5>
+                    <div class="form-group input-group col-sm-8">
+                        <div class="custom-control custom-radio ">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"
+                                checked="">
+                            <label class="custom-control-label" for="customRadio1">Penha</label>
+                        </div>
+                        <div class="custom-control custom-radio ml-3">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Gambelas</label>
+                        </div>
+                        <div class="custom-control custom-radio ml-3">
+                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">Portimão</label>
+                        </div>
+                    </div class="input-group col-sm-4">
+                    <br>
+                    <div class="input-group col-sm-12">
+                        <div class=" input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Entidade Organizadora</span>
+                        </div>
+                        <select class="form-control custom-select col-sm-3">
+                            <option selected>Escolha um...</option>
+                            <option value="1">FCT</option>
+                            <option value="2">DCMB</option>
+                            <option value="3">ESHGT</option>
+                            <option value="4">ISE</option>
+                            <option value="5">ESEC</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="input-group col-sm-12">
+                        <div class=" input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Dep/Area/Nucleo/Curso</span>
+                        </div>
+                        <select class="form-control custom-select col-sm-3">
+                            <option selected>Escolha um...</option>
+                            <option value="1">DEEI</option>
+                            <option value="2">DC</option>
+                            <option value="3">ISE</option>
+                            <option value="4">DCMB</option>
+                            <option value="5">DF</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="input-group col-sm-12">
+                        <div class=" input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Tipo Atividade</span>
+                        </div>
+                        <select class="form-control custom-select col-sm-3">
+                            <option selected>Escolha um...</option>
+                            <option value="1">Exposiçao</option>
+                            <option value="2">Palestra</option>
+                            <option value="3">Musica</option>
+                            <option value="4">Demostração</option>
+                        </select>
+                    </div>
+                    <br>
+                    <h5 class="input-group col-sm-8">Descrição:</h5>
+                    <div class="form-group">
+                        <textarea class="form-control" style="resize: none; width: 50%;height: 150%"></textarea>
+                    </div>
+
+                    <div class="input-group col-sm-8">
+                        <div class="input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Local</span>
+                        </div>
+                        <input type="text" value="" name="local" class="form-control col-sm-3">
+                    </div>
+                    <br>
+                    <div class="input-group col-sm-8">
+                        <div class="input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Duração</span>
+                        </div>
+                        <input type="text" placeholder="minutos" name="duracao" class="form-control col-sm-3">
+                    </div>
+                    <br>
+                    <div class="input-group col-sm-8">
+                        <div class="input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Nº Participantes</span>
+                        </div>
+                        <input type="text" placeholder="" name="n_part" class="form-control col-sm-3">
+                    </div>
+                    <br>
+                    <h5 class="input-group col-sm-8">Dia(s):</h5>
+                    <div class="form-group input-group col-sm-8">
+                        <div class="custom-control custom-radio ">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"
+                                checked="" disabled="">
+                            <label class="custom-control-label" for="customRadio1">20020-02-20</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="input-group col-sm-8">
+                        <div class=" input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Numero de sessão:</span>
+                        </div>
+                        <select class="form-control custom-select col-sm-2" name="n_ses">
+                            <option selected>Escolha um...</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="ml-3 input-group col-lg-5">
+                        <div class=" input-group">
+                           As: <select class="custom-select col-sm-1" style="margin-left:1%;">
+                                <option selected></option>
+                                <option value="1">9</option>    
+                                <option value="2">10</option>
+                                <option value="3">11</option>
+                                <option value="3">12</option>
+                                <option value="3">13</option>
+                                <option value="3">14</option>
+                                <option value="3">15</option>
+                                <option value="3">16</option>
+                                <option value="3">17</option>
+                            </select><span class="ml-2"> H</span><select class="custom-select col-sm-1 ml-1">
+                                <option selected></option>
+                                <option value="1">00</option>
+                                <option value="2">15</option>
+                                <option value="1">30</option>
+                                <option value="2">45</option>
+                            </select><span class="ml-2">M</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align:center" class="form-group col-lg-12">
+                        <div class="controls">
+                            <button type="button" data-toggle="modal" data-target="#exampleModal"
+                                class="btn btn-success">Confirmar Atividade</button>
+                            <input type="submit" value="Limpar" class="btn btn-warning">
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Deseja Confirmar a criação da atividade?
+                                </div>
+                                <div class="modal-footer">
+                                    <input type="submit" class="btn btn-success" value="sim">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $('#left-column').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
+<!--End Sidebar-->

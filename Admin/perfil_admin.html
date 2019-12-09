@@ -72,16 +72,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#atividade" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <a href="#Atividades" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <i class="fas fa-copy sidebar-img"></i>
                             <span class="sidebar-text">Atividades</span>
                         </a>
-                        <ul class="collapse list-unstyled">
+                        <ul class="collapse list-unstyled" id="Atividades">
                             <li>
-                                <a href="#">Criar Atividade</a>
-                            </li>
-                            <li>
-                                <a href="#">Consultar Atividade</a>
+                                <a href="#">Consultar atividades</a>
                             </li>
                         </ul>
                     </li>
@@ -92,7 +89,7 @@
                         </a>
                         <ul class="collapse list-unstyled" id="Transportes">
                             <li>
-                                <a href="#">Criar Transporte</a>
+                                <a href="criar_transporte.html">Publicar Transporte</a>
                             </li>
                             <li>
                                 <a href="#">Consultar Transporte</a>
@@ -108,7 +105,7 @@
                     <li>
                         <a href="#">
                             <i class="fas fa-calendar sidebar-img"></i>
-                            <span class="sidebar-text">Horario</span>
+                            <span class="sidebar-text">Horário</span>
                         </a>
                     </li>
                     <li>
@@ -137,7 +134,7 @@
         <div id="slidebar">
             <ul class="list-unstyled components">
                 <li id="question">
-                    <a href="#" class="question btn-circle btn-info" data-toogle="collapse" aria-expanded="false"
+                    <a href="#" class="question btn-circle btn-info " data-toogle="collapse" aria-expanded="false"
                         style="width: 50%;height:50%;padding: 9px 15px; border-radius:50%; font-size:24px;line-height:1.33"><i
                             class="fas fa-question"></i></a>
                 </li>
@@ -165,7 +162,38 @@
             <!-- End Page Header  -->
 
             <!--Write Code-->
-
+            <div>
+                <form class="well form-horizontal ">
+                    <div class="input-group col-sm-8">
+                        <div class="input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Nome</span>
+                        </div>
+                        <input type="text" value="xxxxxxx" class="form-control">
+                    </div>
+                    <br>
+                    <div class="input-group col-sm-8">
+                        <div class="input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Função</span>
+                        </div>
+                        <input type="text" value = "admin" class="form-control">
+                    </div>
+                    <br>
+                    <div class="input-group col-sm-8">
+                        <div class="input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Email</span>
+                        </div>
+                        <input type="email" value = "xxxxxx@ualg.pt" class="form-control col-sm-8">
+                    </div>
+                    <br>
+                    <div class="input-group col-sm-8">
+                        <div class="input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Nº Telemóvel</span>
+                        </div>
+                        <input type="text" value= "xxxxxxxxxx"class="form-control col-sm-3">
+                    </div>
+                        <!-- Button -->
+                                        </form>
+            </div>
         </div>
     </div>
 

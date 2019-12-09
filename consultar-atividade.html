@@ -61,12 +61,12 @@
             <nav id="sidebar">
                 <div class="sidebar-header" style="padding:8%">
                     <img src="logo_ualg_white.png" style="vertical-align:inherit;">
-                    <span class="sidebar-text sidebar-header-text" style="padding: 0%;width:60%">UAlg<h6>Universidade do Algarve</h6></span>
+                    <span class="sidebar-text sidebar-header-text" style="padding: 0%;width:60%">UAlg<h6>universidade do algarve</h6></span>
                 </div>
 
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="perfi_docente.html">
+                        <a href="#">
                             <i class="fas fa-home sidebar-img"></i>
                             <span class="sidebar-text">Perfil</span>
                         </a>
@@ -78,29 +78,37 @@
                         </a>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="criar_atividade.html">Criar Atividade</a>
+                                <a href="#">Criar Atividade</a>
                             </li>
                             <li>
-                                <a href="consultar-atividade.html" class="sidebar-current-position">Consultar Atividade</a>
+                                <a href="#" class="sidebar-current-position">Consultar Atividade</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#Transportes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-car sidebar-img"></i>
+                            <span class="sidebar-text">Transportes</span>
+                        </a>
+                        <ul class="collapse list-unstyled" id="Transportes">
+                            <li>
+                                <a href="#">Criar Transporte</a>
+                            </li>
+                            <li>
+                                <a href="#">Consultar Transporte</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-tasks sidebar-img"></i>
-                            <span class="sidebar-text">Tarefas</span>
+                            <i class="fa fa-utensils sidebar-img"></i>
+                            <span class="sidebar-text">Refeições</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fas fa-calendar sidebar-img"></i>
                             <span class="sidebar-text">Horario</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-users sidebar-img"></i>
-                            <span class="sidebar-text">Grupos</span>
                         </a>
                     </li>
                     <li>
@@ -174,7 +182,7 @@
                     <tbody>
                         <tr>
                                     <td align="center">
-                                        <a class="btn btn-danger" onclick="myFunction()"><em class="fa fa-trash"></em></a>
+                                        <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
                                     </td>
                             <td>klfjjskd</td>
                             <td>Penha</td>
@@ -188,7 +196,7 @@
                     <tbody>
                         <tr>
                                     <td align="center">
-                                        <a class="btn btn-danger" onclick="myFunction()"><em class="fa fa-trash"></em></a>
+                                        <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
                                     </td>
                             <td>kddskj</td>
                             <td>Penha</td>
@@ -202,7 +210,7 @@
                     <tbody>
                         <tr>
                                     <td align="center">
-                                        <a class="btn btn-danger" onclick="myFunction()"><em class="fa fa-trash"></em></a>
+                                        <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
                                     </td>
                             <td>kldjdskl</td>
                             <td>Gambelas</td>
@@ -226,11 +234,6 @@
             });
         });
     </script>
-    <script>
-    function myFunction() {
-        document.getElementById("myTable").deleteRow(0);
-      }
-      </script>
 </body>
 
 </html>

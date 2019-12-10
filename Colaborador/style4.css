@@ -51,6 +51,11 @@ span {
     display: inline-block;
 }
 
+.menu-list > li{
+    list-style-type: none;
+    padding: 1%;
+}
+
 
 /*HEADER*/
 .headerTitle{
@@ -305,10 +310,12 @@ a.article:hover {
     color: white;
     border-radius: 6px;
     border-color: #0FA5F1;
+    z-index: 9;
   }
   
   #question{
     position: fixed;
     bottom: 5%;
     right: 1%;
+    z-index: 9;
   }

@@ -56,6 +56,112 @@ span {
     padding: 1%;
 }
 
+/*
+NOTIFICATION_BAR
+*/
+
+.notification-table{
+    height: 80%;
+}
+.notification-bar{
+    margin-right: 2%;
+    display: relative;
+    float: left;
+    width: 30%;
+    overflow-y: none;
+    height: 100%;
+}
+
+
+.table-title{
+    height: 50px;
+    vertical-align: center;
+    padding: 12px;
+    outline-color: #0FA5F1;
+    outline-style: auto;
+    background-color: #0FA5F1;
+    width: 100%;
+    text-align: center;
+}
+
+.message-region{
+    overflow-y: hidden;
+    height: 100%;
+    width: 60%;
+}
+
+.notification-message{
+    outline-color: #0FA5F1;
+    outline-style: auto;
+    overflow-y: hidden;
+    height: 87%;
+    width: 100%;
+    margin-top: 3%;
+}
+
+
+.notification-region{
+    height: 70%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    margin-top: 6%;
+    padding:2%;
+    outline-color: #0FA5F1;
+    outline-style: auto;
+}
+
+.notification-region>ul>li {
+    height: 10%;
+    margin-bottom: 2%;
+    outline-color: #0FA5F1;
+    outline-style: auto;
+    width: 100%;
+}
+
+.notification-region>ul>li:hover {
+    background-color: #0FA5F1;
+    color: #fafafa;
+    transition: all 0.3s;
+}
+
+.notification-region>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+
+
+.notification-cat{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+
+.notification-cat >li{
+    margin-top: 10px;
+    vertical-align: center;
+    padding:1.8%;
+    width: 100%;
+    text-align: center;
+    background-color: #0FA5F1;
+    color: #fafafa;
+    outline-color: #0FA5F1;
+    outline-style: auto;
+}
+
+.notification-cat >li:hover{
+    background-color: #fafafa;
+    color: #0FA5F1;
+    outline-color: #0FA5F1;
+    outline-style: auto;
+    transition: all 0.3s;
+}
+
 
 /*HEADER*/
 .headerTitle{

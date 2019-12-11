@@ -59,9 +59,10 @@
         <!-- Sidebar  -->
         <div id="left-column">
             <nav id="sidebar">
-                <div class="sidebar-header" style="padding:8%">
-                    <img src="logo_ualg_white.png" style="vertical-align:inherit;">
-                    <span class="sidebar-text sidebar-header-text" style="padding: 0%;width:60%">UAlg<h6>universidade do algarve</h6></span>
+                <div class="sidebar-header">
+                    <img src="logo_ualg_white.png">
+                    <div class="sidebar-text sidebar-header-text">UAlg<h6>Universidade do Algarve</h6>
+                    </div>
                 </div>
 
                 <ul class="list-unstyled components">
@@ -83,7 +84,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#Transportes" data-toggle="collapse" aria-expanded=none class="dropdown-toggle sidebar-current-position">
+                        <a href="#Transportes" data-toggle="collapse" aria-expanded=none
+                            class="dropdown-toggle sidebar-current-position">
                             <i class="fas fa-car sidebar-img"></i>
                             <span class="sidebar-text">Transportes</span>
                         </a>
@@ -142,11 +144,13 @@
         </div>
         <!--End Help Button-->
         <div id="content">
+            
+
             <!-- Page Header  -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid text-center">
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-primary btn-md">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
                         <i class="fas fa-align-left"></i>
                     </button>
                     <div class="nav navbar-nav text-center">
@@ -154,7 +158,81 @@
                     </div>
                     <ul class="nav navbar-nav pull-right">
                         <li class="nav-item active">
-                            <button type="button" class="btn btn-primary btn-md"><i class="fas fa-bell"></i></button>
+                            <div class="dropdown">
+                                <button class="btn btn-primary btn-sm" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-bell"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right test" aria-labelledby="dropdownMenuButton">
+                                    <ul class="bell-notification-list">
+                                        <li>
+                                            <div class="bell-notification-title">title</div>
+                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-sender">(Colaborador)Pedro</div>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li>
+                                            <div class="bell-notification-title">title</div>
+                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-sender">(Colaborador)Pedro</div>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li>
+                                            <div class="bell-notification-title">title</div>
+                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-sender">(Colaborador)Pedro</div>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li>
+                                            <div class="bell-notification-title">title</div>
+                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-sender">(Colaborador)Pedro</div>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li>
+                                            <div class="bell-notification-title">title</div>
+                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-sender">(Colaborador)Pedro</div>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li>
+                                            <div class="bell-notification-title">title</div>
+                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-sender">(Colaborador)Pedro</div>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li>
+                                            <div class="bell-notification-title">title</div>
+                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-sender">(Colaborador)Pedro</div>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li>
+                                            <div class="bell-notification-title">title</div>
+                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-sender">(Colaborador)Pedro</div>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li>
+                                            <div class="bell-notification-title">title</div>
+                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-sender">(Colaborador)Pedro</div>
+                                        </li>
+                                        <div class="dropdown-divider"></div>
+                                        <li>
+                                            <div class="bell-notification-title">title</div>
+                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-sender">(Colaborador)Pedro</div>
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <div class = "notification-button" style="margin-left: -1px;"><a href="notifi.html">Mostrar todas</a></div><div class = "notification-button" style ="margin-left:1px;"><a href="notifi.html">Nova notificação</a></div>
+                                    </div>
+                                    <!--<a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a> -->
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -164,121 +242,123 @@
             <!--Write Code-->
             <div>
                 <form class="well form-horizontal pt-2">
-                        <div class="ml-3 input-group col-lg-5">
-                                <div class=" input-group">
-                                    Hora de Partida: <select class="custom-select col-sm-2" style="margin-left:3%;">
-                                        <option value="1">9</option>    
-                                        <option value="2">10</option>
-                                        <option value="3">11</option>
-                                        <option value="3">12</option>
-                                        <option value="3">13</option>
-                                        <option value="3">14</option>
-                                        <option value="3">15</option>
-                                        <option value="3">16</option>
-                                        <option value="3">17</option>
-                                    </select><span class="ml-2"> H</span><select class="custom-select col-sm-2 ml-1">
-                                        <option value="1">00</option>
-                                        <option value="2">15</option>
-                                        <option value="1">30</option>
-                                        <option value="2">45</option>
-                                    </select><span class="ml-2">M</span>
+                    <div class="ml-3 input-group col-lg-5">
+                        <div class=" input-group">
+                            Hora de Partida: <select class="custom-select col-sm-2" style="margin-left:3%;">
+                                <option value="1">9</option>
+                                <option value="2">10</option>
+                                <option value="3">11</option>
+                                <option value="3">12</option>
+                                <option value="3">13</option>
+                                <option value="3">14</option>
+                                <option value="3">15</option>
+                                <option value="3">16</option>
+                                <option value="3">17</option>
+                            </select><span class="ml-2"> H</span><select class="custom-select col-sm-2 ml-1">
+                                <option value="1">00</option>
+                                <option value="2">15</option>
+                                <option value="1">30</option>
+                                <option value="2">45</option>
+                            </select><span class="ml-2">M</span>
+                        </div>
+                    </div>
+                    <div class="ml-3 input-group col-lg-5 pt-5">
+                        <div class=" input-group">
+                            Hora de chegada: <select class="custom-select col-sm-2 ml-1">
+                                <option value="1">9</option>
+                                <option value="2">10</option>
+                                <option value="3">11</option>
+                                <option value="3">12</option>
+                                <option value="3">13</option>
+                                <option value="3">14</option>
+                                <option value="3">15</option>
+                                <option value="3">16</option>
+                                <option value="3">17</option>
+                            </select><span class="ml-2"> H</span><select class="custom-select col-sm-2 ml-1">
+                                <option value="1">00</option>
+                                <option value="2">15</option>
+                                <option value="1">30</option>
+                                <option value="2">45</option>
+                            </select><span class="ml-2">M</span>
+                        </div>
+                    </div>
+                    <div class="input-group col-sm-9 pt-5 ml-3">
+                        <div class="input-group-prepend labelForm">
+                            <span class="input-group-text w-100" id="">Número de Lugares</span>
+                        </div>
+                        <input type="text" placeholder="" name="n_lug" class="form-control col-sm-1">
+                    </div>
+                    <h5 class="input-group col-sm-8 pt-5 ml-3">Origem:</h5>
+                    <div class="form-group-prepend input-group col-sm-8 ml-3">
+                        <div class="custom-control custom-radio ">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">Penha</label>
+                        </div>
+                        <div class="custom-control custom-radio ml-3">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Gambelas</label>
+                        </div>
+                        <div class="custom-control custom-radio ml-3">
+                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">Portimão</label></div>
+                    </div>
+                    <h5 class="input-group col-sm-8 pt-5 ml-3">Destino:</h5>
+                    <div class="form-group input-group col-sm-8 ml-3">
+                        <div class="custom-control custom-radio ">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">Penha</label>
+                        </div>
+                        <div class="custom-control custom-radio ml-3">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Gambelas</label>
+                        </div>
+                        <div class="custom-control custom-radio ml-3">
+                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">Portimão</label>
+                        </div>
+                    </div>
+                    <div style="text-align:center" class="form-group col-lg-12 pt-2">
+                        <div class="controls">
+                            <button type="button" data-toggle="modal" data-target="#exampleModal"
+                                class="btn btn-success">Confirmar Transporte</button>
+                            <input type="submit" value="Limpar" class="btn btn-warning">
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Deseja Confirmar a publicação deste Transporte?
+                                </div>
+                                <div class="modal-footer">
+                                    <input type="submit" class="btn btn-success" value="sim">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
                                 </div>
                             </div>
-                            <div class="ml-3 input-group col-lg-5 pt-5">
-                                    <div class=" input-group">
-                                        Hora de chegada: <select class="custom-select col-sm-2 ml-1">
-                                            <option value="1">9</option>    
-                                            <option value="2">10</option>
-                                            <option value="3">11</option>
-                                            <option value="3">12</option>
-                                            <option value="3">13</option>
-                                            <option value="3">14</option>
-                                            <option value="3">15</option>
-                                            <option value="3">16</option>
-                                            <option value="3">17</option>
-                                        </select><span class="ml-2"> H</span><select class="custom-select col-sm-2 ml-1">
-                                            <option value="1">00</option>
-                                            <option value="2">15</option>
-                                            <option value="1">30</option>
-                                            <option value="2">45</option>
-                                        </select><span class="ml-2">M</span>
-                                    </div>
-                                </div>
-                                <div class="input-group col-sm-9 pt-5 ml-3">
-                                    <div class="input-group-prepend labelForm">
-                                        <span class="input-group-text w-100" id="">Número de Lugares</span>
-                                    </div>
-                                    <input type="text" placeholder="" name="n_lug" class="form-control col-sm-1">
-                                </div>
-                                <h5 class="input-group col-sm-8 pt-5 ml-3">Origem:</h5>
-                                    <div class="form-group-prepend input-group col-sm-8 ml-3">
-                                    <div class="custom-control custom-radio ">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" >
-                                        <label class="custom-control-label" for="customRadio1">Penha</label>
-                                    </div>
-                                    <div class="custom-control custom-radio ml-3">
-                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio2">Gambelas</label>
-                                    </div>
-                                    <div class="custom-control custom-radio ml-3">
-                                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" >
-                                    <label class="custom-control-label" for="customRadio3">Portimão</label></div>
-                                </div>
-                                <h5 class="input-group col-sm-8 pt-5 ml-3">Destino:</h5>
-                                    <div class="form-group input-group col-sm-8 ml-3">
-                                    <div class="custom-control custom-radio ">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" >
-                                        <label class="custom-control-label" for="customRadio1">Penha</label>
-                                    </div>
-                                    <div class="custom-control custom-radio ml-3">
-                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio2">Gambelas</label>
-                                    </div>
-                                    <div class="custom-control custom-radio ml-3">
-                                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" >
-                                    <label class="custom-control-label" for="customRadio3">Portimão</label>
-                                </div>
-                                </div>
-                                <div style="text-align:center" class="form-group col-lg-12 pt-2">
-                                    <div class="controls">
-                                            <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-success">Confirmar Transporte</button>
-                                            <input type="submit" value="Limpar" class="btn btn-warning">
-                                        </div>
-                                        </div>
-                <!-- Button trigger modal -->
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            Deseja Confirmar a publicação deste Transporte?
-        </div>
-        <div class="modal-footer">
-            <input type="submit" class="btn btn-success" value="sim">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</form>
-</div>
-</div>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-                $('#left-column').toggleClass('active');
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                    $('#left-column').toggleClass('active');
+                });
             });
-        });
-    </script>
+        </script>
 
 </body>
 

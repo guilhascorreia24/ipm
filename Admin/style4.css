@@ -56,9 +56,84 @@ span {
     padding: 1%;
 }
 
+/*Notification bell*/
+
+.bell-notification-list{
+    margin: 0;
+    padding:0;
+    width: 400px;
+    text-align: center;
+    max-height:60vh;
+    overflow: auto;
+}
+.bell-notification-title{
+    font-weight:bold;
+    text-align:left;
+    font-size:80%;
+    margin-bottom: 2%;
+}
+
+.bell-notification-content{
+    padding-left:2%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align:left;
+    font-size: 70%;
+    text-overflow: ellipsis;
+    max-width: inherit;
+    margin-bottom: 2%;
+}
+
+.bell-notification-sender{
+    text-align: right;
+    font-size: 75%;
+}
+
+
+.bell-notification-list>li{
+    list-style-type: none;
+    padding: 2%;
+    height: 11vh;
+    overflow-y: hidden; 
+}
+
+.bell-notification-list>li:hover{
+    background-color: #0FA5F1;
+    transition: all 0.3s;
+}
+
+.bell-notification-list>.dropdown-divider{
+    padding:0;
+    margin:0;
+}
+
+
 /*
 NOTIFICATION_BAR
 */
+
+.test{
+    padding: 0px;
+}
+
+.notification-button{
+    cursor:pointer;
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+    width:50%;
+    background-color: #0FA5F1;
+    color: white;
+    height: 120%;
+}
+
+.notification-button:hover{
+    background-color: white;
+    color: #0FA5F1;   
+    transition: all 0.3s;
+    outline-color:  #0FA5F1;
+    outline-style: auto;
+}
 
 .notification-table{
     height: 80%;
@@ -81,20 +156,43 @@ NOTIFICATION_BAR
     outline-style: auto;
     background-color: #0FA5F1;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .message-region{
-    overflow-y: scroll;
+    overflow-y: hidden;
     height: 100%;
     width: 60%;
 }
 
+
+
+.button-send-not{
+    cursor: pointer;
+    height: 7%;
+    width: 100%;
+    margin-top: 10px;
+    vertical-align: center;
+    padding:1%;
+    text-align: center;
+    background-color: green;
+    color: #fafafa;
+    border-radius: 20px;
+}
+
+.button-send-not:hover{
+    background-color: #fafafa;
+    color: green;
+    border: 1px solid green;
+    transition: all 0.3s;
+}
+
 .notification-message{
+    padding: 3%;
     outline-color: #0FA5F1;
     outline-style: auto;
-    overflow-y: scroll;
-    height: 87%;
+    overflow-y: hidden;
+    height: 70%;
     width: 100%;
     margin-top: 3%;
 }
@@ -102,8 +200,8 @@ NOTIFICATION_BAR
 
 .notification-region{
     height: 70%;
-    overflow-x: scroll;
-    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
     text-align: center;
     margin-top: 6%;
     padding:2%;
@@ -176,18 +274,15 @@ NOTIFICATION_BAR
     align-items: stretch;
 }
 
-::-webkit-scrollbar {
-    display: none;
-    }
-
 .labelForm{
     width:25%;
 }
 
 #left-column{
-    padding-right:300px;
+    padding-right:240px;
     transition:all 0.3s;
 }
+
 
 #left-column.active{
     padding-right:100px;
@@ -195,8 +290,8 @@ NOTIFICATION_BAR
 }
 
 #sidebar {
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 250px;
+    max-width: 250px;
     position: fixed;
     bottom: 0;
     top: 0;
@@ -215,22 +310,13 @@ NOTIFICATION_BAR
     min-width: 100px;
     max-width: 100px;
     text-align: center;
-    overflow-y: scroll;
+    overflow-y: none;
 }
 
 #sidebar.active .sidebar-text{
     display: none;
 }
 
-#sidebar .sidebar-header-text{
-    padding-left: 10%;
-    width: inherit;
-}
-
-#sidebar.active .sidebar-header span {
-    padding-bottom: 20%;
-    display: none;
-}
 
 #sidebar ul li a {
     text-align: left;
@@ -263,14 +349,18 @@ NOTIFICATION_BAR
 }
 
 #sidebar .sidebar-header {
-    padding: 27px;
+    overflow:hidden;
+    padding: 8%;
     background: #0FA5F1;
-    max-height: 90px;
+    height: 20%;
     font-size: 40px;
 }
 
 #sidebar.active .sidebar-header {
-    padding: 5px;
+   height: inherit;
+   padding: 0%;
+   padding-bottom: 10%;
+   margin: 0%;
 }
 
 #sidebar.active .sidebar-img{
@@ -278,13 +368,23 @@ NOTIFICATION_BAR
     width: inherit;
 }
 
+#sidebar.active img{
+    margin: 0%;
+    padding: 5%;
+    height: initial;
+    width:100%;
+}
+
 #sidebar img{
-    max-height:inherit; 
-    max-width: inherit;
+    margin-top: 5%;
+    margin-right: 6%;
+    height: 80%;
+    margin-left: 2%;
+    display: relative;
+    float: left;
 }
 
 #sidebar ul.components {
-    padding: 20% 0%;
     border-bottom: 1px solid #0FA5F1;
 }
 
@@ -368,12 +468,6 @@ a.article:hover {
 
 
 @media (max-width: 768px) {
-    #sidebar {
-        min-width: 300px;
-        max-width: 80px;
-        text-align: center;
-        margin-left: 0px !important;
-    }
     .dropdown-toggle::after {
         top: auto;
         bottom: 10px;
@@ -384,9 +478,6 @@ a.article:hover {
     }
     #sidebar.active {
         margin-left: 0 !important;
-    }
-    #sidebar .sidebar-header span {
-        display: block;
     }
     #sidebar ul li a {
         padding: 20px 10px;
@@ -429,6 +520,3 @@ a.article:hover {
     right: 1%;
     z-index: 9;
   }
-
-
-  /* meti o scroll bar de todas as componentes escondida*/

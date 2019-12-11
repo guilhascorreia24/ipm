@@ -112,6 +112,29 @@ span {
 NOTIFICATION_BAR
 */
 
+.test{
+    padding: 0px;
+}
+
+.notification-button{
+    cursor:pointer;
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+    width:50%;
+    background-color: #0FA5F1;
+    color: white;
+    height: 120%;
+}
+
+.notification-button:hover{
+    background-color: white;
+    color: #0FA5F1;   
+    transition: all 0.3s;
+    outline-color:  #0FA5F1;
+    outline-style: auto;
+}
+
 .notification-table{
     height: 80%;
 }
@@ -133,7 +156,7 @@ NOTIFICATION_BAR
     outline-style: auto;
     background-color: #0FA5F1;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .message-region{
@@ -142,11 +165,34 @@ NOTIFICATION_BAR
     width: 60%;
 }
 
+
+
+.button-send-not{
+    cursor: pointer;
+    height: 7%;
+    width: 100%;
+    margin-top: 10px;
+    vertical-align: center;
+    padding:1%;
+    text-align: center;
+    background-color: green;
+    color: #fafafa;
+    border-radius: 20px;
+}
+
+.button-send-not:hover{
+    background-color: #fafafa;
+    color: green;
+    border: 1px solid green;
+    transition: all 0.3s;
+}
+
 .notification-message{
+    padding: 3%;
     outline-color: #0FA5F1;
     outline-style: auto;
     overflow-y: hidden;
-    height: 87%;
+    height: 70%;
     width: 100%;
     margin-top: 3%;
 }
@@ -333,7 +379,6 @@ NOTIFICATION_BAR
     margin-top: 5%;
     margin-right: 6%;
     height: 80%;
-    width: 40%; 
     margin-left: 2%;
     display: relative;
     float: left;
@@ -423,12 +468,6 @@ a.article:hover {
 
 
 @media (max-width: 768px) {
-    #sidebar {
-        min-width: 300px;
-        max-width: 80px;
-        text-align: center;
-        margin-left: 0px !important;
-    }
     .dropdown-toggle::after {
         top: auto;
         bottom: 10px;

@@ -210,6 +210,7 @@ NOTIFICATION_BAR
 }
 
 .notification-region>ul>li {
+    cursor: pointer;
     height: 10%;
     margin-bottom: 2%;
     outline-color: #0FA5F1;
@@ -241,6 +242,7 @@ NOTIFICATION_BAR
 }
 
 .notification-cat >li{
+    cursor: pointer;
     margin-top: 10px;
     vertical-align: center;
     padding:1.8%;

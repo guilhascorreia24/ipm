@@ -59,47 +59,41 @@
         <!-- Sidebar  -->
         <div id="left-column">
             <nav id="sidebar">
-                <div class="sidebar-header" style="padding:8%">
-                    <img src="logo_ualg_white.png" style="vertical-align:inherit;">
-                    <span class="sidebar-text sidebar-header-text" style="padding: 0%;width:60%">UAlg<h6>Universidade do
+                <div class="sidebar-header" >
+                    <img src="logo_ualg_white.png" >
+                    <span class="sidebar-text sidebar-header-text">UAlg<h6>Universidade do
                             Algarve</h6></span>
                 </div>
 
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#">
+                        <a href="perfil_colaborador.html">
                             <i class="fas fa-home sidebar-img"></i>
                             <span class="sidebar-text">Perfil</span>
                         </a>
                     </li>
                     <li class="sidebar-current-position">
-                            <a href="#Tarefas">
+                            <a href="colaborador_horarios.html">
                                 <i class="fas fa-tasks sidebar-img"></i>
                                 <span class="sidebar-text">Tarefas</span>
                             </a>
                     </li>
                     <li>
-                        <a href="#Transportes">
+                        <a href="colaborador_tranportes.html">
                             <i class="fas fa-car sidebar-img"></i>
                             <span class="sidebar-text">Transportes</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="colaborador_refeicoes.html">
                             <i class="fa fa-utensils sidebar-img"></i>
                             <span class="sidebar-text">Refeições</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="colaborador_grupos.html">
                             <i class="fa fa-user sidebar-img"></i>
                             <span class="sidebar-text">Grupos</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-cog sidebar-img"></i>
-                            <span class="sidebar-text">Definições</span>
                         </a>
                     </li>
                     <li class="bg-danger   ">
@@ -128,7 +122,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid text-center">
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary btn-md">
                         <i class="fas fa-align-left"></i>
                     </button>
                     <div class="nav navbar-nav text-center">
@@ -136,7 +130,7 @@
                     </div>
                     <ul class="nav navbar-nav pull-right">
                         <li class="nav-item active">
-                            <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-bell"></i></button>
+                            <button type="button" class="btn btn-primary btn-md"><i class="fas fa-bell"></i></button>
                         </li>
                     </ul>
                 </div>
@@ -147,28 +141,31 @@
                     <thead>
                         <tr>
                             <td>Hora</td>
-                            <th>Grupo</th>
-                            <th>Nº Pessoas do grupo</th>
+                            <th>Nº grupo</th>
+                            <th>Origem</th>
+                            <th>Destino</th>
                             <th>Tarefa</th>
-                            <th>Atividade</th>
+                            <th>Nº participantes</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>9:00</td>
-                            <td>Grupo 20</td>
+                            <td>20</td>
+                            <td>Gambelas</td>
+                            <td>Faro</td>
+                            <td>guiar grupo</td>
                             <td>15</td>
-                            <td>Guiar Grupo</td>
-                            <td>----</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
                             <td>10:00</td>
-                            <td>Grupo 2754</td>
-                            <td>1</td>
-                            <td>Guiar Grupo</td>
-                            <td>----</td>
+                            <td>20</td>
+                            <td>2.56, C1, Gambelas</td>
+                            <td>1.60, C8, Gambelas</td>
+                            <td>guiar grupo</td>
+                            <td>15</td>
                         </tr>
                     </tbody>
                     <tbody>
@@ -178,20 +175,23 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
                             <td>12:00</td>
-                            <td>Grupo 30</td>
                             <td>20</td>
-                            <td>Guiar Grupo</td>
-                            <td>----</td>
+                            <td>2.56, Cp, Gambelas</td>
+                            <td>2.56, C2, Gambela</td>
+                            <td>guiar grupo</td>
+                            <td>15</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
                             <td>13:00</td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -205,20 +205,23 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
                             <td>15:00</td>
-                            <td>----</td>
-                            <td>----</td>
-                            <td>Aguardar na Atividade</td>
-                            <td>Astrologia</td>
+                            <td>20</td>
+                            <td>2.56, C3, Gambela</td>
+                            <td>2.56, C7, Gambela</td>
+                            <td>guiar grupo</td>
+                            <td>15</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
                             <td>16:00</td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -232,6 +235,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
                     <tbody>
@@ -241,11 +245,13 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
                             <td>19:00</td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>

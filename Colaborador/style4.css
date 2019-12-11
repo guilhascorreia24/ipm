@@ -85,7 +85,7 @@ NOTIFICATION_BAR
 }
 
 .message-region{
-    overflow-y: hidden;
+    overflow-y: scroll;
     height: 100%;
     width: 60%;
 }
@@ -93,7 +93,7 @@ NOTIFICATION_BAR
 .notification-message{
     outline-color: #0FA5F1;
     outline-style: auto;
-    overflow-y: hidden;
+    overflow-y: scroll;
     height: 87%;
     width: 100%;
     margin-top: 3%;
@@ -102,8 +102,8 @@ NOTIFICATION_BAR
 
 .notification-region{
     height: 70%;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-x: scroll;
+    overflow-y: scroll;
     text-align: center;
     margin-top: 6%;
     padding:2%;
@@ -176,6 +176,10 @@ NOTIFICATION_BAR
     align-items: stretch;
 }
 
+::-webkit-scrollbar {
+    display: none;
+    }
+
 .labelForm{
     width:25%;
 }
@@ -209,9 +213,9 @@ NOTIFICATION_BAR
 
 #sidebar.active {
     min-width: 100px;
-    max-width: 120px;
+    max-width: 100px;
     text-align: center;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 #sidebar.active .sidebar-text{

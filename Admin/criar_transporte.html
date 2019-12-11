@@ -73,15 +73,10 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#Atividades" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <a href="#" data-toggle="collapse" aria-expanded="false" class="">
                             <i class="fas fa-copy sidebar-img"></i>
                             <span class="sidebar-text">Atividades</span>
                         </a>
-                        <ul class="collapse list-unstyled" id="Atividades">
-                            <li>
-                                <a href="Consultar-transportes.html">Consultar atividades</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
                         <a href="#Transportes" data-toggle="collapse" aria-expanded=none
@@ -116,12 +111,6 @@
                             <span class="sidebar-text">Check-In</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-cog sidebar-img"></i>
-                            <span class="sidebar-text">Definições</span>
-                        </a>
-                    </li>
                     <li class="bg-danger   ">
                         <a href="
                     #"><i class="fas fa-times sidebar-img"></i>
@@ -150,7 +139,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid text-center">
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary btn-md">
                         <i class="fas fa-align-left"></i>
                     </button>
                     <div class="nav navbar-nav text-center">
@@ -159,7 +148,7 @@
                     <ul class="nav navbar-nav pull-right">
                         <li class="nav-item active">
                             <div class="dropdown">
-                                <button class="btn btn-primary btn-sm" type="button" id="dropdownMenuButton"
+                                <button class="btn btn-primary btn-md" type="button" id="dropdownMenuButton"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-bell"></i>
                                 </button>
@@ -244,7 +233,7 @@
                 <form class="well form-horizontal pt-2">
                     <div class="ml-3 input-group col-lg-5">
                         <div class=" input-group">
-                            Hora de Partida: <select class="custom-select col-sm-2" style="margin-left:3%;">
+                            Hora de Partida: <select class="custom-select col-sm-2" style="margin-left:3%;" required="">
                                 <option value="1">9</option>
                                 <option value="2">10</option>
                                 <option value="3">11</option>
@@ -254,7 +243,7 @@
                                 <option value="3">15</option>
                                 <option value="3">16</option>
                                 <option value="3">17</option>
-                            </select><span class="ml-2"> H</span><select class="custom-select col-sm-2 ml-1">
+                            </select><span class="ml-2"> H</span><select class="custom-select col-sm-2 ml-1" required="">
                                 <option value="1">00</option>
                                 <option value="2">15</option>
                                 <option value="1">30</option>
@@ -286,7 +275,7 @@
                         <div class="input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Número de Lugares</span>
                         </div>
-                        <input type="text" placeholder="" name="n_lug" class="form-control col-sm-1">
+                        <input type="text" placeholder="" name="n_lug" class="form-control col-sm-1" required="">
                     </div>
                     <h5 class="input-group col-sm-8 pt-5 ml-3">Origem:</h5>
                     <div class="form-group-prepend input-group col-sm-8 ml-3">
@@ -321,7 +310,6 @@
                         <div class="controls">
                             <button type="button" data-toggle="modal" data-target="#exampleModal"
                                 class="btn btn-success">Confirmar Transporte</button>
-                            <input type="submit" value="Limpar" class="btn btn-warning">
                         </div>
                     </div>
                     <!-- Button trigger modal -->

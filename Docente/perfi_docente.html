@@ -67,7 +67,7 @@
 
                 <ul class="list-unstyled components">
                     <li class="sidebar-current-position">
-                        <a href="#">
+                        <a href="perfil_docente.html">
                             <i class="fas fa-home sidebar-img"></i>
                             <span class="sidebar-text">Perfil</span>
                         </a>
@@ -77,51 +77,25 @@
                             <i class="fas fa-copy sidebar-img"></i>
                             <span class="sidebar-text">Atividades</span>
                         </a>
-                        <ul class="collapse list-unstyled">
+                        <ul class="collapse list-unstyled" id="atividade">
                             <li>
-                                <a href="#">Criar Atividade</a>
+                                <a href="criar_atividade.html">Criar Atividade</a>
                             </li>
                             <li>
-                                <a href="#">Consultar Atividade</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#Transportes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-car sidebar-img"></i>
-                            <span class="sidebar-text">Transportes</span>
-                        </a>
-                        <ul class="collapse list-unstyled" id="Transportes">
-                            <li>
-                                <a href="#">Criar Transporte</a>
-                            </li>
-                            <li>
-                                <a href="#">Consultar Transporte</a>
+                                <a href="consultar-atividade.html">Consultar Atividade</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa fa-utensils sidebar-img"></i>
-                            <span class="sidebar-text">Refeições</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-calendar sidebar-img"></i>
-                            <span class="sidebar-text">Horario</span>
+                            <span class="sidebar-text">Tarefas</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fas  fa-check sidebar-img"></i>
-                            <span class="sidebar-text">Check-In</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-cog sidebar-img"></i>
-                            <span class="sidebar-text">Definições</span>
+                            <span class="sidebar-text">Chegadas</span>
                         </a>
                     </li>
                     <li class="bg-danger   ">
@@ -151,7 +125,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid text-center">
     
-                        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <button type="button" id="sidebarCollapse" class="btn btn-primary btn-md">
                             <i class="fas fa-align-left"></i>
                         </button>
                         <div class="nav navbar-nav text-center">
@@ -160,7 +134,7 @@
                         <ul class="nav navbar-nav pull-right">
                             <li class="nav-item active">
                                 <div class="dropdown">
-                                    <button class="btn btn-primary btn-sm" type="button" id="dropdownMenuButton"
+                                    <button class="btn btn-primary btn-md" type="button" id="dropdownMenuButton"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fas fa-bell"></i>
                                     </button>
@@ -249,28 +223,35 @@
                         <div class="input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Nome</span>
                         </div>
-                        <input type="text" value="name" class="form-control">
+                        <input type="text" value="" class="form-control">
                     </div>
                     <br>
                     <div class="input-group col-sm-8">
                         <div class="input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Função</span>
                         </div>
-                        <input type="text" value="school_name" class="form-control">
+                        <input type="text" value="" class="form-control">
                     </div>
                     <br>
                     <div class="input-group col-sm-8">
                         <div class="input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Email</span>
                         </div>
-                        <input type="email" value="mail" class="form-control col-sm-8">
+                        <input type="email" value="" class="form-control col-sm-8">
                     </div>
                     <br>
                     <div class="input-group col-sm-8">
                         <div class="input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Nº Telemóvel</span>
                         </div>
-                        <input type="text" value="phone_number" class="form-control col-sm-3">
+                        <input type="text" value="" class="form-control col-sm-3">
+                    </div>
+                    <br>
+                     <div style="text-align:center" class="form-group col-lg-12">
+                        <div class="controls">
+                            <button type="button" data-toggle="modal" data-target="#exampleModal"
+                                class="btn btn-success">Confirmar alteração</button>
+                                                        </div>
                     </div>
                     <!-- Button -->
                 </form>

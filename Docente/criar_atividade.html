@@ -78,51 +78,25 @@
                             <i class="fas fa-copy sidebar-img"></i>
                             <span class="sidebar-text">Atividades</span>
                         </a>
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled" >
                             <li>
-                                <a href="#" class="sidebar-current-position">Criar Atividade</a>
+                                <a href="criar_atividade.html" class="sidebar-current-position">Criar Atividade</a>
                             </li>
                             <li>
-                                <a href="#">Consultar Atividade</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#Transportes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-car sidebar-img"></i>
-                            <span class="sidebar-text">Transportes</span>
-                        </a>
-                        <ul class="collapse list-unstyled" id="Transportes">
-                            <li>
-                                <a href="#">Criar Transporte</a>
-                            </li>
-                            <li>
-                                <a href="#">Consultar Transporte</a>
+                                <a href="consultar-atividade.html">Consultar Atividade</a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa fa-utensils sidebar-img"></i>
-                            <span class="sidebar-text">Refeições</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-calendar sidebar-img"></i>
-                            <span class="sidebar-text">Horario</span>
+                            <span class="sidebar-text">Tarefas</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fas  fa-check sidebar-img"></i>
-                            <span class="sidebar-text">Check-In</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-cog sidebar-img"></i>
-                            <span class="sidebar-text">Definições</span>
+                            <span class="sidebar-text">Chegadas</span>
                         </a>
                     </li>
                     <li class="bg-danger   ">
@@ -152,7 +126,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid text-center">
     
-                        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <button type="button" id="sidebarCollapse" class="btn btn-primary btn-md">
                             <i class="fas fa-align-left"></i>
                         </button>
                         <div class="nav navbar-nav text-center">
@@ -161,7 +135,7 @@
                         <ul class="nav navbar-nav pull-right">
                             <li class="nav-item active">
                                 <div class="dropdown">
-                                    <button class="btn btn-primary btn-sm" type="button" id="dropdownMenuButton"
+                                    <button class="btn btn-primary btn-md" type="button" id="dropdownMenuButton"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fas fa-bell"></i>
                                     </button>
@@ -246,10 +220,10 @@
             <div class="col-sm-12">
                 <form class="well form-horizontal">
                     <h5 class="input-group col-sm-8">Campus:</h5>
-                    <div class="form-group input-group col-sm-8">
+                    <div class="form-group input-group col-sm-8" required>
                         <div class="custom-control custom-radio ">
                             <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"
-                                checked="">
+                                >
                             <label class="custom-control-label" for="customRadio1">Penha</label>
                         </div>
                         <div class="custom-control custom-radio ml-3">
@@ -266,7 +240,7 @@
                         <div class=" input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Entidade Organizadora</span>
                         </div>
-                        <select class="form-control custom-select col-sm-3">
+                        <select class="form-control custom-select col-sm-3" required="">
                             <option selected>Escolha um...</option>
                             <option value="1">FCT</option>
                             <option value="2">DCMB</option>
@@ -294,7 +268,7 @@
                         <div class=" input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Tipo Atividade</span>
                         </div>
-                        <select class="form-control custom-select col-sm-3">
+                        <select class="form-control custom-select col-sm-3" required="">
                             <option selected>Escolha um...</option>
                             <option value="1">Exposiçao</option>
                             <option value="2">Palestra</option>
@@ -305,28 +279,28 @@
                     <br>
                     <h5 class="input-group col-sm-8">Descrição:</h5>
                     <div class="form-group">
-                        <textarea class="form-control" style="resize: none; width: 50%;height: 150%"></textarea>
+                        <textarea class="form-control" style="resize: none; width: 50%;height: 150%" required=""></textarea>
                     </div>
 
                     <div class="input-group col-sm-8">
                         <div class="input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Local</span>
                         </div>
-                        <input type="text" value="" name="local" class="form-control col-sm-3">
+                        <input type="text" value="" name="local" class="form-control col-sm-3" required="">
                     </div>
                     <br>
                     <div class="input-group col-sm-8">
                         <div class="input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Duração</span>
                         </div>
-                        <input type="text" placeholder="minutos" name="duracao" class="form-control col-sm-3">
+                        <input type="text" placeholder="minutos" name="duracao" class="form-control col-sm-3" required="">
                     </div>
                     <br>
                     <div class="input-group col-sm-8">
                         <div class="input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Nº Participantes</span>
                         </div>
-                        <input type="text" placeholder="" name="n_part" class="form-control col-sm-3">
+                        <input type="text" placeholder="" name="n_part" class="form-control col-sm-3" required="">
                     </div>
                     <br>
                     <h5 class="input-group col-sm-8">Dia(s):</h5>
@@ -340,17 +314,16 @@
                     <br>
                     <div class="input-group col-sm-8">
                         <div class=" input-group-prepend labelForm">
-                            <span class="input-group-text w-100" id="">Numero de sessão:</span>
+                            <span class="input-group-text w-100" id="">Nº de sessões:</span>
                         </div>
-                        <select class="form-control custom-select col-sm-2" name="n_ses">
-                            <option selected>Escolha um...</option>
+                        <select class="form-control custom-select col-sm-2" name="n_ses" required="">
                             <option value="1">1</option>
                         </select>
                     </div>
                     <br>
-                    <div class="ml-3 input-group col-lg-5">
+                    <div class="     input-group col-lg-5">
                         <div class=" input-group">
-                            As: <select class="custom-select col-sm-1" style="margin-left:1%;">
+                            As: <select class="custom-select col-sm-2" style="margin-left:1%;" required="">
                                 <option selected></option>
                                 <option value="1">9</option>
                                 <option value="2">10</option>
@@ -361,7 +334,7 @@
                                 <option value="3">15</option>
                                 <option value="3">16</option>
                                 <option value="3">17</option>
-                            </select><span class="ml-2"> H</span><select class="custom-select col-sm-1 ml-1">
+                            </select><span class="ml-2"> H</span><select class="custom-select col-sm-2 ml-2" required="">
                                 <option selected></option>
                                 <option value="1">00</option>
                                 <option value="2">15</option>
@@ -375,7 +348,6 @@
                         <div class="controls">
                             <button type="button" data-toggle="modal" data-target="#exampleModal"
                                 class="btn btn-success">Confirmar Atividade</button>
-                            <input type="submit" value="Limpar" class="btn btn-warning">
                         </div>
                     </div>
                     <!-- Button trigger modal -->

@@ -112,6 +112,31 @@ span {
 NOTIFICATION_BAR
 */
 
+.test{
+    padding: 0px;
+}
+
+.notification-button{
+    cursor:pointer;
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+    width:50%;
+    background-color: #0FA5F1;
+    color: white;
+    height: 120%;
+}
+
+.notification-button:hover{
+    background-color: white;
+    color: #0FA5F1;   
+    transition: all 0.3s;
+    outline-color:  #0FA5F1;
+    outline-style: auto;
+}
+
+.notification-
+
 .notification-table{
     height: 80%;
 }

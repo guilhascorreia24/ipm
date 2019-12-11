@@ -170,7 +170,7 @@ NOTIFICATION_BAR
 .button-send-not{
     cursor: pointer;
     height: 7%;
-    width: 100%;
+    width: 20%;
     margin-top: 10px;
     vertical-align: center;
     padding:1%;
@@ -192,7 +192,7 @@ NOTIFICATION_BAR
     outline-color: #0FA5F1;
     outline-style: auto;
     overflow-y: hidden;
-    height: 70%;
+    height: 57%;
     width: 100%;
     margin-top: 3%;
 }

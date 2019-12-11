@@ -87,21 +87,21 @@
                     <br>
                     <h5 class="input-group col-sm-8">Descrição:</h5>
                         <div class="form-group">
-                        <textarea class="form-control" style="resize: none; width: 50%;height: 150%">{{descriçao}}</textarea>
+                        <textarea class="form-control bg-light" style="resize: none; width: 50%;height: 150%" disabled="">{{descriçao}}</textarea>
                     </div>
 
                     <div class="input-group col-sm-8">
                         <div class="input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Local</span>
                         </div>
-                        <input type="text" value="Espaço Mostra (corredor de acesso a sala 40)" name="local" class="form-control col-lg-3">
+                        <input type="text" value="Espaço Mostra (corredor de acesso a sala 40)" name="local" class="form-control col-lg-6 bg-light" disabled="">
                     </div>
                     <br>
                     <div class="input-group col-sm-8">
                         <div class="input-group-prepend labelForm">
                             <span class="input-group-text w-100" id="">Duração</span>
                         </div>
-                        <input type="text" placeholder="minutos" name="duracao" value="15" class="form-control col-sm-3">
+                        <input type="text" placeholder="minutos" name="duracao" value="15" class="form-control col-sm-3 bg-light" disabled="">
                     </div>
                     <br>
                     <div class="input-group col-sm-8">
@@ -115,36 +115,28 @@
                 <div class="form-group input-group col-sm-8">
                 <div class="custom-control custom-radio ">
                     <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="" disabled="">
-                    <label class="custom-control-label" for="customRadio1" checked="">20020-02-20</label>
+                    <label class="custom-control-label" for="customRadio1" checked="" >20020-02-20</label>
                 </div>
             </div>
-                <br>
-                    <div class="input-group col-sm-10">
-                            <div class=" input-group-prepend labelForm">
-                                <span class="input-group-text w-100" id="">Numero de sessão:</span>
-                            </div>
-                            <input type="text" placeholder="" name="n_part" value="3" class="form-control col-sm-3 bg-light" disabled>
-                        </div>
-                        <br>
-                    <h5 class="input-group col-sm-8">Nº Sessao:</h5>
+                    <h5 class="input-group col-sm-8">Sessão:</h5>
                     <div class="form-group input-group col-sm-8">
                     <div class="custom-control custom-radio ">
-                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio1">09:00</label>
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">09:00</label>
                     </div>
                     <div class="custom-control custom-radio ml-3">
-                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio2">09:30</label>
+                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio3">09:30</label>
                     </div>
                     <div class="custom-control custom-radio ml-3">
-                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" >
-                    <label class="custom-control-label" for="customRadio3">10:00</label>
-                </div>
+                        <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input" >
+                        <label class="custom-control-label" for="customRadio4">10:00</label>
+                    </div>
                 </div>
                 <br>
                 <div style="text-align:center" class="form-group col-lg-12">
                 <div class="controls">
-                    <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-success">Confirmar Transporte</button>
+                    <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-success">Confirmar Inscrição</button>
                     </div>
                 </div>
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -160,7 +152,8 @@
                             Deseja Confirmar a sua inscrição?
                         </div>
                         <div class="modal-footer">
-                            <input type="submit" class="btn btn-success" value="Sim">
+                            <a type="button" class="btn btn-success" a="inscriçao.html" onclick="self.close()">Sim</a>
+                            <!--em les mete if no controller para fechar esta janela-->
                           <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
                         </div>
                       </div>

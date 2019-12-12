@@ -79,7 +79,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="colaborador_transporte.html">
+                        <a href="colaborador_tranportes.html">
                             <i class="fas fa-car sidebar-img"></i>
                             <span class="sidebar-text">Transportes</span>
                         </a>
@@ -122,7 +122,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid text-center">
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary btn-md">
                         <i class="fas fa-align-left"></i>
                     </button>
                     <div class="nav navbar-nav text-center">
@@ -131,23 +131,27 @@
                     <ul class="nav navbar-nav pull-right">
                         <li class="nav-item active">
                             <div class="dropdown">
-                                <button class="btn btn-primary btn-sm" type="button" id="dropdownMenuButton"
+                                <button class="btn btn-primary btn-md" type="button" id="dropdownMenuButton"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-bell"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right test" aria-labelledby="dropdownMenuButton">
                                     <ul class="bell-notification-list">
                                         <li>
-                                            <div class="bell-notification-title">title</div>
-                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-title">Aluno Perdido</div>
+                                            <div class="bell-notification-content">Existe um aluno perdido no edificio 1.1.1</div>
                                             <div class="bell-notification-sender">(Colaborador)Pedro</div>
                                         </li>
                                         <div class="dropdown-divider"></div>
                                         <li>
-                                            <div class="bell-notification-title">title</div>
-                                            <div class="bell-notification-content">allhauhakbar vou explodir</div>
+                                            <div class="bell-notification-title">Sala Errada</div>
+                                            <div class="bell-notification-content">Existe uma sala errada no sistema</div>
                                             <div class="bell-notification-sender">(Colaborador)Pedro</div>
                                         </li>
+                                    </ul>
+                                    <div>
+                                        <div class = "notification-button" style="margin-left: -1px;"><a href="notifi.html">Mostrar todas</a></div><div class = "notification-button" style ="margin-left:1px;"><a href="notifi.html">Nova notificação</a></div>
+                                    </div>
                                     <!--<a class="dropdown-item" href="#">Action</a>
                                   <a class="dropdown-item" href="#">Another action</a>
                                   <a class="dropdown-item" href="#">Something else here</a> -->
@@ -188,13 +192,10 @@
 
                 <div class="message-region">
                     
-                    <div class="table-title">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="">Destinatario </span>
-                        <input style="margin-left:2%" type="text" placeholder="" name="n_lug" class=" col-sm-12" required="">
-                    </div>
-                    </div>
+
+                    <div style="display:flex;">
+                        <div style="padding-top:4.5%;">Destinatario</div>
+                        <textarea style="resize:none;padding:0px;margin-left:2%;" class="notification-message"></textarea>
                     </div>
 
                     <div style="display:flex;">

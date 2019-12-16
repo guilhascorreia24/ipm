@@ -59,41 +59,49 @@
         <!-- Sidebar  -->
         <div id="left-column">
             <nav id="sidebar">
-                <div class="sidebar-header">
-                    <img src="logo_ualg_white.png">
-                    <div class="sidebar-text sidebar-header-text">UAlg<h6>Universidade do Algarve</h6>
-                    </div>
-                </div>
+                    <div class="sidebar-header">
+                            <img src="logo_ualg_white.png">
+                            <div class="sidebar-text sidebar-header-text">UAlg<h6>Universidade do Algarve</h6>
+                            </div>
+                        </div>
 
                 <ul class="list-unstyled components">
-                    <li>
-                        <a href="perfil_colaborador.html">
+                    <li class="sidebar-current-position">
+                        <a href="index4.html">
                             <i class="fas fa-home sidebar-img"></i>
                             <span class="sidebar-text">Perfil</span>
                         </a>
                     </li>
                     <li>
-                        <a href="colaborador_horarios.html">
-                            <i class="fas fa-tasks sidebar-img"></i>
-                            <span class="sidebar-text">Tarefas</span>
+                        <a href="atividade_participante.html"  aria-expanded="false" class="">
+                            <i class="fas fa-copy sidebar-img"></i>
+                            <span class="sidebar-text">Atividades</span>
                         </a>
                     </li>
                     <li>
-                        <a href="colaborador_transporte.html">
+                        <a href="#Transportes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <i class="fas fa-car sidebar-img"></i>
                             <span class="sidebar-text">Transportes</span>
                         </a>
+                        <ul class="collapse list-unstyled" id="Transportes">
+                            <li>
+                                <a href="meus_transporte.html">Meus Transportes</a>
+                            </li>
+                            <li>
+                                <a href="Consultar-transportes.html">Consultar Transporte</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="colaborador_refeicoes.html">
+                        <a href="#">
                             <i class="fa fa-utensils sidebar-img"></i>
                             <span class="sidebar-text">Refeições</span>
                         </a>
                     </li>
                     <li>
-                        <a href="colaborador_grupos.html">
-                            <i class="fa fa-user sidebar-img"></i>
-                            <span class="sidebar-text">Grupos</span>
+                        <a href="#">
+                            <i class="fas  fa-check sidebar-img"></i>
+                            <span class="sidebar-text">Chegadas</span>
                         </a>
                     </li>
                     <li class="bg-danger   ">

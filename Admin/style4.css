@@ -16,6 +16,16 @@ p {
     color: #999;
 }
 
+
+.formBox-margin {
+    margin-left:10%;
+}
+
+.formBox-label {
+    width: 60px;
+    white-space: nowrap;
+}
+
 a,
 a:hover,
 a:focus {

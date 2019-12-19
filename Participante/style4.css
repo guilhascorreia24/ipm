@@ -11,7 +11,9 @@ body {
 
 .tranportes{
     width: 60px;
+    margin-left: 32%;
 }
+
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
@@ -452,6 +454,16 @@ a.article,
 a.article:hover {
     background: #F70333!important;
     color: #fff !important;
+}
+
+.formBox-margin {
+    margin-left:10%;
+}
+ 
+.formBox-label {
+    width: 60px;
+    white-space: nowrap;
+text-right;
 }
 
 /* ---------------------------------------------------

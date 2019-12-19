@@ -59,33 +59,33 @@
         <!-- Sidebar  -->
         <div id="left-column">
             <nav id="sidebar">
-                    <div class="sidebar-header">
-                            <img src="logo_ualg_white.png">
-                            <div class="sidebar-text sidebar-header-text">UAlg<h6>Universidade do Algarve</h6>
-                            </div>
-                        </div>
+                <div class="sidebar-header">
+                    <img src="logo_ualg_white.png">
+                    <div class="sidebar-text sidebar-header-text">UAlg<h6>Universidade do Algarve</h6>
+                    </div>
+                </div>
 
-                <ul class="list-unstyled components">
-                    <li>
-                        <a href="incial_com_inscrição.html">
+ <ul class="list-unstyled components">
+                        <li class="sidebar-current-position">
+                        <a href="incial_sem_inscriçao.html">
                             <i class="fas fa-home sidebar-img"></i>
-                            <span class="sidebar-text">Pagina Incial</span>
+                            <span class="sidebar-text">Pagina Inicial</span>
                         </a>
                     </li>
-                                        <li>
+                    <li class="">
                         <a href="inscriçao.html">
                             <i class="fas fa-home sidebar-img"></i>
                             <span class="sidebar-text">Inscrição</span>
                         </a>
                     </li>
                     <li>
-                        <a href="atividade_participante.html"  aria-expanded="false" class="sidebar-current-position">
+                        <a href="atividade_participante.html"  aria-expanded="false" class="">
                             <i class="fas fa-copy sidebar-img"></i>
                             <span class="sidebar-text">Atividades</span>
                         </a>
                     </li>
                     <li>
-                        <a href="adicionar_transporte.html" data-toggle="collapse" aria-expanded="false" >
+                        <a href="adicionar_transporte.html" aria-expanded="false">
                             <i class="fas fa-car sidebar-img"></i>
                             <span class="sidebar-text">Transportes</span>
                         </a>
@@ -102,7 +102,7 @@
                             <span class="sidebar-text">Chegadas</span>
                         </a>
                     </li>
-                                        <li>
+                    <li>
                         <a href="#">
                             <i class="fas  fa-cogs sidebar-img"></i>
                             <span class="sidebar-text">Definições</span>
@@ -128,9 +128,10 @@
                 </li>
             </ul>
         </div>
+
         <!--End Help Button-->
         <div id="content">
-            
+
             <!-- Page Header  -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid text-center">
@@ -154,12 +155,19 @@
                     </div>
                 </nav>
                 <!-- End Page Header  -->
-            <!--Page code-->
-            <div class="panel-body">
+
+
+
+            <!--Write Code-->
+                                           <h1 class="text-center" style="color: black">
+                Bem-Vindo</h1>
+                    <div class="col col-xs-6">
+                                    <h2 class="panel-title">Atividades</h2>
+                                </div>
+                                 <div class="panel-body">
                 <table class="table table-striped table-bordered table-list" style = "">
                     <thead>
                         <tr>
-                            <th><em></em></th>
                             <th>Titulo</th>
                             <th>Campus</th>
                             <th>Departamento</th>
@@ -171,9 +179,6 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td align="center">
-                                    <a onclick="atividade_detalhada()" class="btn btn-success"><em class="fas fa-plus"></em></a>
-                            </td>
                             <td>Futuro</td>
                             <td>Gambelas</td>
                             <td>Deei</td>
@@ -183,39 +188,59 @@
                             <td>10/2/2020</td>
                         </tr>
                     </tbody>
-                    <tbody>
+                </table>
+            </div>
+                                        <div class="col col-xs-6">
+                                    <h2 class="panel-title">Transporte</h2>
+                                </div>
+                <div class="panel-body">
+                <table class="table table-striped table-bordered table-list" style="">
+                    <thead>
                         <tr>
-                            <td align="center">
-                                    <a class="btn btn-success"><em class="fas fa-plus"></em></a>
-                            </td>
-                            <td>iniciaçao de opera</td>
-                            <td>Penha</td>
-                            <td>ISE</td>
-                            <td>musica</td>
-                            <td>15</td>
-                            <td>35</td>
-                            <td>10/2/2020</td>
+                            <th>Horas Partidas</th>
+                            <th>Horas Chegadas</th>
+                            <th>Origem</th>
+                            <th>Destino</th>
+                            <th>Lugares Disponiveis</th>
                         </tr>
-                    </tbody>
+                    </thead>
                     <tbody>
                         <tr>
-                            <td align="center">
-                                <a class="btn btn-success"><em class="fas fa-plus"></em></a>
-                            </td>
-                            <td>cavalos marinhos</td>
+                            <td>8:30</td>
+                            <td>9:00</td>
+                            <td>Penha</td>
                             <td>Gambelas</td>
-                            <td>DCBM</td>
-                            <td>exposição</td>
-                            <td>30</td>
-                            <td>10</td>
-                            <td>10/2/2020</td>
+                            <td>60</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+                                                    <div class="col col-xs-6">
+                                    <h2 class="panel-title">Refeição</h2>
+                                </div>
+                                <div class="form-group col-sm-8">
+                        <label class="formBox-label" style="margin-left:10%">Menu Carne</label><span class="" style="margin-left:7%">
+                            <input type="text" class="form-control col-sm-2" style="width: 350px" value="10" disabled="" 
+                                >
+                        </span>
+                    </div>
+<div class="form-group col-sm-8">
+                        <label class="formBox-label" style="margin-left:10.5%">Menu peixe</label><span style="margin-left:6.5%" >
+                            <input type="email" class="form-control col-sm-2" style="width: 350px" value="5" disabled="" 
+                                >
+                        </span>
+                    </div>
+<div class="form-group col-sm-8">
+                        <label class="formBox-label" style="margin-left:2.5%" >Menu vegetariano</label><span class=""style="margin-left:14.5%">
+                            <input type="text" class="form-control col-sm-2"  style="width: 350px" value="5" disabled="" 
+                                >
+                        </span>
+                    </div>
 
+            </div>
         </div>
     </div>
+
     <script type="text/javascript">
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
@@ -224,10 +249,7 @@
             });
         });
     </script>
-    <script>
-        function atividade_detalhada() {
-          var myWindow = window.open("inscricao_atividade.html", "newwindow", "width=950,height=600");
-        }
-        </script>
 </body>
+
 </html>
+<!--End Sidebar-->

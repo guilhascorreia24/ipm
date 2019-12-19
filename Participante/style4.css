@@ -9,6 +9,15 @@ body {
     background: #fafafa;
 }
 
+.formBox-margin {
+    margin-left:10%;
+}
+
+.formBox-label {
+    width: 60px;
+    white-space: nowrap;
+}
+
 .tranportes{
     width: 60px;
 }
